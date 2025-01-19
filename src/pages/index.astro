@@ -1,4 +1,8 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
 const pageTitle = "Index";
 ---
 
@@ -10,7 +14,9 @@ const pageTitle = "Index";
 		<meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
 	</head>
-	<body>
+  <body>
+    <Navigation />
     <h1>{pageTitle}</h1>
+    <Footer />
 	</body>
 </html>
